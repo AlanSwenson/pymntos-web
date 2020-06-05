@@ -9,6 +9,7 @@ black = "*"
 [packages]
 flask = "*"
 environs = "*"
+gunicorn = "*"
 
 [requires]
 python_version = "3.8"

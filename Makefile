@@ -1,7 +1,7 @@
 run-frontend:
 	cd frontend && npm run dev
 run-argon-frontend:
-	cd argon-frontend && yarn serve
+	yarn serve
 run-backend:
 	flask run --port 3000
 build:

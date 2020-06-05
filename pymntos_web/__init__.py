@@ -1,3 +1,5 @@
+import os
+
 from flask import (
     Flask,
     redirect,
@@ -10,6 +12,7 @@ from flask import (
     jsonify,
     abort,
     flash,
+    send_file,
 )
 
 from pymntos_web.config import Config
@@ -19,21 +22,18 @@ def create_app():
     """Create Flask app.
 
     """
-    app = Flask(__name__, static_folder="./dist/static", template_folder="./dist")
+    app = Flask(__name__, static_folder="./dist/")
     app.config.from_object(Config)
 
     with app.app_context():
         initialize_extensions(app)
         register_blueprints(app)
 
-    @app.route("/", defaults={"path": ""})
-    @app.route("/<path:path>")
-    def catch_all(path):
-        return render_template("index.html")
-
-    @app.errorhandler(404)
-    def page_not_found(e):
-        return render_template("404.html", title="404")
+    @app.route("/")
+    def index_client():
+        dist_dir = current_app.config["DIST_DIR"]
+        entry = os.path.join(dist_dir, "index.html")
+        return send_file(entry)
 
     return app
 

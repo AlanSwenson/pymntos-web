@@ -1,7 +1,7 @@
 <template>
   <header class="header-global">
     <div style="position: relative">
-      <base-nav type="primary" effect="dark" expand>
+      <base-nav class="navbar-main" transparent type effect="light" expand>
         <a class="navbar-brand" href="#">
           <i class="fab fa-python fa-2x" style="vertical-align: middle;"></i>
           <span class="pl-3">pymntos</span>
@@ -20,7 +20,7 @@
 
         <ul class="navbar-nav ml-lg-auto">
           <li class="nav-item nav-link-icon my-auto">
-            <a class="nav-link" href="#">About</a>
+            <router-link to="/about" class="nav-link">About</router-link>
           </li>
           <li class="nav-item">
             <a

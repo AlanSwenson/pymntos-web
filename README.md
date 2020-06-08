@@ -17,3 +17,7 @@ Public Facing Website for pymntos
 ## Backend
 
 `make run-backend`
+
+## Contributing
+
+TODO: List install requirements and instructions for users to submit a PR with contributions.

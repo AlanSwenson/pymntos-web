@@ -3,7 +3,7 @@
     <div style="position: relative">
       <base-nav type="primary" effect="dark" expand>
         <a class="navbar-brand" href="#">
-          <i class="fab fa-python fa-2x" style=" vertical-align: middle;"></i>
+          <i class="fab fa-python fa-2x" style="vertical-align: middle;"></i>
           <span class="pl-3">pymntos</span>
         </a>
 
@@ -19,17 +19,20 @@
         </div>
 
         <ul class="navbar-nav ml-lg-auto">
+          <li class="nav-item nav-link-icon my-auto">
+            <a class="nav-link" href="#">About</a>
+          </li>
           <li class="nav-item">
             <a
               class="nav-link nav-link-icon"
               href="https://www.meetup.com/PyMNtos-Twin-Cities-Python-User-Group/"
             >
-              <i class="fab fa-meetup fa-2x"></i>
+              <i class="fab fa-meetup fa-2x" style="vertical-align: middle;"></i>
             </a>
           </li>
           <li class="nav-item">
             <a class="nav-link nav-link-icon" href="https://github.com/PyMNtos">
-              <i class="fab fa-github fa-2x"></i>
+              <i class="fab fa-github fa-2x" style="vertical-align: middle;"></i>
             </a>
           </li>
         </ul>
@@ -40,11 +43,13 @@
 <script>
 import BaseNav from "@/components/BaseNav";
 import CloseButton from "@/components/CloseButton";
+import BaseDropdown from "@/components/BaseDropdown";
 
 export default {
   components: {
     BaseNav,
-    CloseButton
+    CloseButton,
+    BaseDropdown
   }
 };
 </script>

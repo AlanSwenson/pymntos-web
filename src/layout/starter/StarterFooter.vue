@@ -7,7 +7,7 @@
         <div class="col-md-6">
           <div class="copyright">
             &copy; {{year}}
-            <a href="#" target="_blank" rel="noopener">PYMNTOS</a> |
+            <a href="#" target="_blank" rel="noopener">pymntos</a> |
             Theme by:
             <a
               href="https://www.creative-tim.com"

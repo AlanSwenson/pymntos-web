@@ -1,5 +1,3 @@
-run-frontend:
-	cd frontend && npm run dev
 run-argon-frontend:
 	yarn serve
 run-backend:
